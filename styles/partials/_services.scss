@@ -1,0 +1,156 @@
+.services {
+	padding-top: 151px;
+	padding-bottom: 152px;
+}
+
+.services-title {
+	text-align: center;
+	max-width: 55%;
+	margin: auto;
+	h2 {
+		text-transform: none;
+		padding-bottom: 24px;
+	}
+	h4 {
+		text-transform: none;
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $brand_green;
+		padding-bottom: 28px;
+	}
+	p {
+		line-height: 24px;
+		font-family: $font_rale;
+	}
+}
+
+.services-main {
+	display: flex;
+	justify-content: space-bwteen;
+	padding-top: 36px;
+	padding-bottom: 74px;
+}
+
+.service-content {
+	padding-top: 47px;
+	h4 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding-bottom: 29px;
+	}
+	p {
+		line-height: 24px;
+	}
+}
+
+.service-item {
+	text-align: center;
+	min-width: calc(33.33% - 20px);
+	margin-right: 20px;
+}
+.service-item:last-child {
+	margin-right: 0;
+}
+
+.service-links {
+	text-align: center;
+	a {
+	display: inline-block;
+	color: white;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: $font_rale;
+	font-weight: 600;
+	letter-spacing: 1px;
+	}
+	a:first-child {
+		background-color: $brand_green;
+		margin-right: 9.5px;
+		padding: 21px 38px 20px 38px;
+	}
+	a:last-child {
+		background-color: #070707;
+		margin-left: 9.5px;
+		padding: 20px 33px 21px 33px;
+	}
+
+}
+
+@media (max-width: 940px) {
+	.services-title {
+		max-width: 70%;
+	}
+
+	.services {
+		padding-top: 94px;
+		padding-bottom: 102px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.services {
+		padding-top: 69px;
+		padding-bottom: 91px;
+	}
+
+	.services-main {
+		display: block;
+		padding-left: 20px; 
+		padding-right: 20px;
+		padding-bottom: 54px;
+	}
+
+	.service-item {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		img {
+			max-width: 150px;
+		}
+	}
+
+	.service-content {
+		padding-top: 0;
+		text-align: left;
+		h4 {
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.services {
+		padding-top: 60px;
+		padding-bottom: 68px;
+	}
+
+	.services-title {
+		max-width: 90%;
+	}
+	
+	.services-main {
+		padding-left: 0px; 
+		padding-right: 10px;
+		padding-bottom: 34px;
+	}
+
+	.service-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		a {
+			
+			max-width: 60%;
+		}
+		a:first-child {
+			margin-bottom: 10px;
+		}
+		a:first-child, a:last-child {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

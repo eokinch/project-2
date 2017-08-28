@@ -1,0 +1,161 @@
+.courses {
+	background-color: #f5f5f6;
+	padding-top: 152px;
+	padding-bottom: 149px;
+
+}
+
+.courses-title {
+	text-align: center;
+	padding-bottom: 55px;
+	h2 {
+		padding-bottom: 27px;
+	}
+}
+
+.courses-main {
+	display: flex;
+	padding-bottom: 80px;
+}
+
+.courses-item {
+	max-width: 358px;
+	margin-right: 47px; 
+	background: white;
+}
+
+.courses-item:last-child {
+	margin-right: 0;
+}
+
+.courses-content {
+	padding: 31px 76px 30px 31px;
+	.date {
+		font-size: 0.85rem;
+		padding-bottom: 21px;
+	}
+	h5 {
+		font-size: 1rem;
+		padding-bottom: 19px;
+	}
+	.description {
+		font-size: 0.71rem;
+		margin-bottom: 17px;
+	}
+	a {
+		display: inline-block;
+		background-color: $brand_green;
+		color: $white_font;
+		padding: 10px 16px;
+		border-radius: 50px;
+		font-family: $font_open;
+		font-size: 0.71rem;
+	}
+}
+
+
+.courses-all {
+	text-align: center;
+	a {
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		font-family: $font_rale;
+		font-weight: 600;
+		display: inline-block;
+		color: $header_color;
+		border: 1px solid $brand_green;
+		border-radius: 50px;
+		padding: 23px 39px 23px 40px;
+	}
+}
+
+@media (max-width: 940px) {
+	.courses {
+		padding-top: 94px;
+		padding-bottom: 102px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.courses {
+		padding-top: 69px;
+		padding-bottom: 91px;
+	}
+
+	.courses-title {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	.courses-main {
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.courses-item {
+		max-width: 100%;
+		display: flex;
+		margin-right: 0; 
+		margin: 0 20px 20px 20px;
+		img {
+			width: 60%;
+			max-width: 358px;
+			max-height: 230px; 
+		}
+	}
+	.courses-item:last-child {
+		margin-right: 20px;
+	}
+
+	.courses-content {
+		width: 50%;
+		padding: 10px 0 0 10px;
+		a {
+			padding: 12px 18px;
+		}
+	}
+
+	.courses-all {
+		a {
+			font-size: 1rem;
+			font-weight: 600;
+			padding: 19px 40px 18px 39px;
+		}
+	}
+
+
+}
+
+
+@media (max-width: 480px) {
+	.courses {
+		padding-top: 60px;
+		padding-bottom: 68px;
+	}
+
+
+	.courses-item {
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		max-width: 358px;
+		margin: 0;
+		margin: auto;
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.courses-item:last-child {
+		margin: 0;
+		margin: auto;
+	}
+
+	.courses-content {
+		width: 100%;
+		padding: 10px;
+	}
+
+}

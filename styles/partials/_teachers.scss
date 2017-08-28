@@ -1,0 +1,156 @@
+.teachers {
+	padding-bottom: 149px;
+	margin:0 10px;
+}
+
+.teachers-title {
+	max-width: 40%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 76px;
+	h2 {
+		padding-bottom: 27px;
+	}
+	p {
+		line-height: 24px;
+	}
+}
+
+.teachers-main {
+	display: flex;
+	padding-bottom: 103px;
+}
+
+.teacher-image {
+	margin-bottom: 39px;
+	
+}
+
+.teachers-content {
+	max-width: 33.33%;
+	margin-right: 47px;
+	h3 {
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding-bottom: 21px;
+	}
+	h4 {
+		color: $brand_green;
+		font-size: 1.12rem;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+}
+
+.teachers-content:last-child {
+	margin-right: 0;
+}
+
+.stay-connected {
+	padding-top: 32px;
+	display: flex;
+	p {
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		padding-right: 35px;
+	}
+}
+
+.teachers-socials {
+	display: flex;
+	li {
+		margin-right: 13px;
+	}
+	a {
+		display: inline-block;
+		color: $dark_grey_font;
+		font-size: 1.25rem;
+	}
+}
+
+.teachers-all {
+	text-align: center;
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+		font-family: $font_rale;
+		font-weight: 600;
+		color: $white_font;
+		background-color: $brand_green;
+		padding: 23px 45px;
+		border-radius: 50px;
+		letter-spacing: 1px;
+	}
+}
+
+@media (max-width: 940px) {
+	.teachers {
+		padding-bottom: 102px;
+	}
+
+	.teachers-title {
+		max-width: 80%;
+	}
+
+	.teachers-main {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	.teachers-content {
+		display: flex;
+		justify-content: center;
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.teacher-image {
+		margin-bottom: 0;
+		margin-right: 40px;
+		max-width: 402px;
+	}
+
+	.teacher-about {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-bottom: 10px;
+
+	}
+
+	.stay-connected {
+		display: block;
+		p {
+			padding-right: 0;
+		}
+		ul {
+			padding-top: 15px;
+		}
+	}
+}
+
+
+@media (max-width: 768px) {
+	.teachers {
+		padding-bottom: 91px;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.teachers {
+		padding-top: 60px;
+		padding-bottom: 68px;
+	}
+	.teachers-title {
+		max-width: 90%;
+	}
+	.teachers-main {
+		padding-bottom: 50px;
+	}
+}
+
+
+
